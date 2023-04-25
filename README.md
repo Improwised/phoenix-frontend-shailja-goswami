@@ -1,6 +1,4 @@
-# Management UI with Nuxt3
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Frontend Excercise
 
 ## Installation
 
@@ -10,7 +8,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ```bash
 # clone repo
-git clone git@github.com:Improwised/nuxt3-boilerplate.git
+git clone git@github.com:Improwised/phoenix-frontend-shailja-goswami.git
 ```
 
 ## Build Setup
@@ -18,18 +16,6 @@ git clone git@github.com:Improwised/nuxt3-boilerplate.git
 For UI everything is under /app/ folder, so go to /app/ folder.
 
 * Go to `/app/` folder. 
-
-* copy `.env.example` to `.env`. (skip if already done)
-
-## .env.example
-
-* copy `.env.example` to `.env`.
-```
-MODE=development
-BASE_URL=
-```
-* `MODE`: This will indicate application state.
-* `BASE_URL`: You can specify your application URL.
 
 * run following commands
 
@@ -46,43 +32,6 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Included Packages
+## Based on Cli and Api exercise create web pages using Nuxt and Bootstrap.
 
-- Bootstrap - for style
-- Pinia - for State management
-- Eslint - for on commit 
-- Prettier - for on commit
-- Vitest - for testcases
-- Husky - for pre-commit hooks
-- Commitlint - for github commit lint
-
-
-
-
-## Store - State Management
-
-This directory contains your Pinia Store files.
-
-for use pinia first define pinia in nuxt config file
-
-More information about the usage of this directory in [documentation]( https://pinia.vuejs.org/ssr/nuxt.html).
-
-* Go to `/app/store` folder, this folder includes,
-
-    * `actions`: Includes all the requests of project.
-    * `getters`: pinia allows us to define "getters" in the store. You can think of them as computed properties for stores.
-    *  `state`: Includes all the variable of the project.
-
-
-
-## Testcases
-This directory includes the test cases. *
-More information to write test cases you can visit this [documentation](https://vitest.dev/guide/)
-### for testcase run
-```
-npm run test
-```
-
-## Other Configuration file
-
-Please check husky folder/files,.eslintrc.js,.prettierrc,tsconfig.ts,vitest.config.ts,plugins folder/files
+## Here is please attach roughly wireframe and routes details of web pages
