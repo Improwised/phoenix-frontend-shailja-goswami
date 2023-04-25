@@ -32,6 +32,6 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Based on Cli and Api exercise create web pages using Nuxt and Bootstrap.
+## Based on JSON data create web pages using Nuxt and Bootstrap.
 
 ## Here is please attach roughly wireframe and routes details of web pages
