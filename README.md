@@ -34,4 +34,6 @@ npm run dev
 
 ## Based on JSON data create web pages using Nuxt and Bootstrap.
 
+Netflix dataset available in app/Titles.Json 
+
 ## Here is please attach roughly wireframe and routes details of web pages
