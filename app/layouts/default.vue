@@ -37,12 +37,15 @@ import tictok from '~/assets/images/icons/tictok.svg'
               </li>
 
               <li class="nav-item px-2">
-                <NuxtLink class="nav-link active" aria-current="page" to="/"
+                <NuxtLink
+                  class="nav-link active"
+                  aria-current="page"
+                  to="/discover"
                   >Discover</NuxtLink
                 >
               </li>
               <li class="nav-item px-2">
-                <NuxtLink class="nav-link active" aria-current="page" to="/"
+                <NuxtLink class="nav-link active" aria-current="page" to="/add"
                   >Add Show</NuxtLink
                 >
               </li>
@@ -83,16 +86,24 @@ import tictok from '~/assets/images/icons/tictok.svg'
                 <NuxtLink to="/" class="white-text-link">Home</NuxtLink>
               </div>
               <div>
-                <NuxtLink to="/" class="white-text-link">Discover</NuxtLink>
+                <NuxtLink to="/discover" class="white-text-link"
+                  >Discover</NuxtLink
+                >
               </div>
               <div>
-                <NuxtLink to="/" class="white-text-link">Update</NuxtLink>
+                <NuxtLink to="/Discover" class="white-text-link"
+                  >Update</NuxtLink
+                >
               </div>
               <div>
-                <NuxtLink to="/" class="white-text-link">Movie</NuxtLink>
+                <NuxtLink to="/discover/Movie" class="white-text-link"
+                  >Movie</NuxtLink
+                >
               </div>
               <div>
-                <NuxtLink to="/" class="white-text-link">Tv show</NuxtLink>
+                <NuxtLink to="/discover/tv-show" class="white-text-link"
+                  >Tv show</NuxtLink
+                >
               </div>
             </div>
           </div>
