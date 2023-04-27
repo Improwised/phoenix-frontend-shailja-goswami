@@ -31,21 +31,27 @@ import tictok from '~/assets/images/icons/tictok.svg'
           <form class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item px-2">
-                <NuxtLink class="nav-link active" aria-current="page" to="/"
+                <NuxtLink
+                  class="nav-link white-text-link"
+                  aria-current="page"
+                  to="/"
                   >Home</NuxtLink
                 >
               </li>
 
               <li class="nav-item px-2">
                 <NuxtLink
-                  class="nav-link active"
+                  class="nav-link white-text-link"
                   aria-current="page"
                   to="/discover"
                   >Discover</NuxtLink
                 >
               </li>
               <li class="nav-item px-2">
-                <NuxtLink class="nav-link active" aria-current="page" to="/add"
+                <NuxtLink
+                  class="nav-link white-text-link"
+                  aria-current="page"
+                  to="/add"
                   >Add Show</NuxtLink
                 >
               </li>
@@ -63,7 +69,9 @@ import tictok from '~/assets/images/icons/tictok.svg'
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-4 pt-5">
+          <div
+            class="col-md-6 col-lg-4 offset-md-3 col-10 offset-1 offset-lg-4 pt-5"
+          >
             <div class="d-flex justify-content-between pt-5">
               <div class="pt-5">
                 <img :src="twitter" />
@@ -79,31 +87,6 @@ import tictok from '~/assets/images/icons/tictok.svg'
               </div>
               <div class="pt-5">
                 <img :src="tictok" />
-              </div>
-            </div>
-            <div class="d-flex justify-content-around pt-5">
-              <div>
-                <NuxtLink to="/" class="white-text-link">Home</NuxtLink>
-              </div>
-              <div>
-                <NuxtLink to="/discover" class="white-text-link"
-                  >Discover</NuxtLink
-                >
-              </div>
-              <div>
-                <NuxtLink to="/Discover" class="white-text-link"
-                  >Update</NuxtLink
-                >
-              </div>
-              <div>
-                <NuxtLink to="/discover/Movie" class="white-text-link"
-                  >Movie</NuxtLink
-                >
-              </div>
-              <div>
-                <NuxtLink to="/discover/tv-show" class="white-text-link"
-                  >Tv show</NuxtLink
-                >
               </div>
             </div>
           </div>
