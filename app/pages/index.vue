@@ -6,9 +6,6 @@ console.log(UsersStore);*/
 </script>
 <template>
   <div class="text-center homepage">Welcome to nuxt3</div>
-  <div class="w-25">
-    <font-awesome-icon icon="fa-solid fa-user-secret" />
-  </div>
 </template>
 <style scoped>
 .homepage {
