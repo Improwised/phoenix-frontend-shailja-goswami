@@ -1,0 +1,45 @@
+body{
+    background-color: #151f30;
+    color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #2f80ed !important;
+    outline: 1px solid #151f30 !important;
+}
+body::-webkit-scrollbar-track {
+    background: #151f30 !important; 
+}
+a{
+    text-decoration: none;
+}
+
+
+/* for Nav bar */
+.nav-navy{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: #131720;
+    border-bottom: 1px solid rgba(2, 2, 15, 1);
+    font-size: large;
+}
+.nav-navy a{
+    color: aliceblue !important;
+}
+@media screen and (min-width: 769px) {
+    .nav-navy{
+        height: 84px;
+    }
+}
+.nav-navy:focus{
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.nav-navy::selection {
+    background: #fff;
+    color: #151f30;
+    text-shadow: none;
+}
+.navbar-toggler{
+   background-color: #fff;
+}
