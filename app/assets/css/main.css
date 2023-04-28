@@ -32,11 +32,13 @@
 }
 
 .router-link-active {
-    color: #0a58ca;
-}
-.nav-link:focus{
   color: #0a58ca;
 }
+
+.nav-link:focus {
+  color: #0a58ca;
+}
+
 .nav-navy::selection {
   background: #fff;
   color: #151f30;
@@ -49,6 +51,7 @@
 
 .main-content {
   margin-top: 84px;
+  margin-bottom: 244px;
 }
 
 /* footer css */
@@ -74,19 +77,48 @@
 }
 
 @media screen and (max-width:768px) {
- .footer__content{
-  margin-top: 16px;
- }  
+  .footer__content {
+    margin-top: 16px;
+  }
 }
 
 
 /* card lsit for the showa  */
-.card-show-brief{
+.card-show-brief {
   background-color: rgba(47, 128, 237, 0.1);
   border-radius: 12px;
 }
 
-
-.btn-theme-blue{
+.btn-theme-blue {
   background-color: #3080ED;
+}
+
+.img-show {
+  height: 320px;
+  width: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width:767px) {
+  .img-show {
+    height: 220px;
+  }
+}
+
+.show-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* common classes */
+.h-24 {
+  height: 24px;
+}
+
+.text-gray {
+  color: hsla(0, 0%, 100%, 0.5) !important;
 }
