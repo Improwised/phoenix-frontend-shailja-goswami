@@ -52,14 +52,6 @@ useHead({
                   >Discover</NuxtLink
                 >
               </li>
-              <li class="nav-item px-2">
-                <NuxtLink
-                  class="nav-link white-text-link"
-                  aria-current="page"
-                  to="/add"
-                  >Add Show</NuxtLink
-                >
-              </li>
             </ul>
           </form>
         </div>
