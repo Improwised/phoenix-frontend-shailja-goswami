@@ -3,12 +3,14 @@
 /*import { useUsersStore } from '~/store/users'
 const UsersStore = useUsersStore()
 console.log(UsersStore);*/
+definePageMeta({
+  layout: 'default',
+})
 </script>
 <template>
-  <div class="text-center homepage">Welcome to nuxt3</div>
-  <div class="w-25">
-    <font-awesome-icon icon="fa-solid fa-user-secret" />
-  </div>
+  <div class="text-center homepage vh-100">Welcome to nuxt3</div>
+  <div class="text-center homepage vh-100">Welcome to nuxt3</div>
+  <div class="text-center homepage vh-100">Welcome to nuxt3</div>
 </template>
 <style scoped>
 .homepage {
