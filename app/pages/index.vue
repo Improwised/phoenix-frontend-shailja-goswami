@@ -8,7 +8,9 @@ definePageMeta({
 })
 </script>
 <template>
-  <div class="text-center homepage">Welcome to nuxt3</div>
+  <div class="text-center homepage vh-100">Welcome to nuxt3</div>
+  <div class="text-center homepage vh-100">Welcome to nuxt3</div>
+  <div class="text-center homepage vh-100">Welcome to nuxt3</div>
 </template>
 <style scoped>
 .homepage {

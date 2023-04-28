@@ -24,7 +24,7 @@ a {
   width: 100%;
   top: 0;
   z-index: 999;
-  background-color: #131720;
+  background-color: #151f30 !important;
   background: linear-gradient(180deg, rgba(21, 31, 48, 0.35) 0%, #131720 100%);
   font-size: large;
 }
@@ -63,15 +63,22 @@ a {
   width: 100%;
   text-align: center;
   padding-bottom: 24px;
+  background-color: #151f30 !important;
   background: linear-gradient(180deg, rgba(21, 31, 48, 0.35) 0%, #131720 100%);
 }
 
 .footer__content {
-  margin-top: 40px;
+  margin-top: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   border-top: 1px solid rgba(47, 128, 237, 0.1);
+}
+
+@media screen and (max-width:768px) {
+ .footer__content{
+  margin-top: 16px;
+ }  
 }

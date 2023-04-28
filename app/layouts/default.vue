@@ -70,9 +70,9 @@ import tictok from '~/assets/images/icons/tictok.svg'
       <div class="container">
         <div class="row">
           <div
-            class="col-md-6 col-lg-4 offset-md-3 col-10 offset-1 offset-lg-4 pt-5"
+            class="col-md-6 col-lg-4 offset-md-3 col-10 offset-1 offset-lg-4 pt-lg-3"
           >
-            <div class="d-flex justify-content-between pt-5">
+            <div class="d-flex justify-content-between pt-lg-5">
               <div class="pt-5">
                 <img :src="twitter" />
               </div>
@@ -91,14 +91,14 @@ import tictok from '~/assets/images/icons/tictok.svg'
             </div>
           </div>
           <div class="footer__content">
-            <div class="col-md-6 col-12 offset-md-3 pt-5">
+            <div class="col-lg-6 col-12 offset-lg-3 pt-md-2 pt-0">
               <div
                 class="d-flex flex-md-row flex-column justify-content-md-between justify-content-center"
               >
-                <div class="mt-4 mt-md-0 text-center">
+                <div class="mt-md-4 mt-md-0 text-center">
                   © FlixTV.Show, 2023. Created by Shailja
                 </div>
-                <div class="mt-4 mt-md-0 text-center">
+                <div class="mt-md-4 mt-md-0 text-center">
                   <NuxtLink to="" class="white-text-link"
                     >Privacy ploicy</NuxtLink
                   >
