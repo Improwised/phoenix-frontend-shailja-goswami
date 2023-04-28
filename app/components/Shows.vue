@@ -34,7 +34,6 @@ const shows = ref(props.showsData.data)
                 </div>
               </div>
             </div>
-            <a href="#" class="btn btn-theme-blue">Go somewhere</a>
           </div>
         </div>
       </div>
