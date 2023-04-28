@@ -4,6 +4,11 @@ import instagram from '~/assets/images/icons/instagram.svg'
 import facebook from '~/assets/images/icons/facebook.svg'
 import voko from '~/assets/images/icons/vokodesign.svg'
 import tictok from '~/assets/images/icons/tictok.svg'
+useHead({
+  bodyAttrs: {
+    class: 'bg-navy',
+  },
+})
 </script>
 <template>
   <div>
