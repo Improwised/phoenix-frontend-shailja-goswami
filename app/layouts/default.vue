@@ -99,7 +99,7 @@ import tictok from '~/assets/images/icons/tictok.svg'
                   © FlixTV.Show, 2023. Created by Shailja
                 </div>
                 <div class="mt-md-4 mt-md-0 text-center">
-                  <NuxtLink to="" class="white-text-link"
+                  <NuxtLink class="white-text-link text-decoration-none"
                     >Privacy ploicy</NuxtLink
                   >
                 </div>
