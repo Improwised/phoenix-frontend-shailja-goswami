@@ -3,6 +3,9 @@
 /*import { useUsersStore } from '~/store/users'
 const UsersStore = useUsersStore()
 console.log(UsersStore);*/
+definePageMeta({
+  layout: 'default',
+})
 </script>
 <template>
   <div class="text-center homepage">Welcome to nuxt3</div>

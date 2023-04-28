@@ -62,7 +62,7 @@ import tictok from '~/assets/images/icons/tictok.svg'
     </nav>
     <!-- Nav bar ended -->
     <div class="main-content">
-      <slot></slot>
+      <NuxtPage></NuxtPage>
     </div>
 
     <!-- footer started-->
@@ -99,7 +99,7 @@ import tictok from '~/assets/images/icons/tictok.svg'
                   © FlixTV.Show, 2023. Created by Shailja
                 </div>
                 <div class="mt-4 mt-md-0 text-center">
-                  <NuxtLink to="/" class="white-text-link"
+                  <NuxtLink to="" class="white-text-link"
                     >Privacy ploicy</NuxtLink
                   >
                 </div>

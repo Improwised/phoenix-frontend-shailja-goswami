@@ -35,6 +35,12 @@ a {
   }
 }
 
+.router-link-active {
+    color: #0a58ca;
+}
+.nav-link:focus{
+  color: #0a58ca;
+}
 .nav-navy::selection {
   background: #fff;
   color: #151f30;
