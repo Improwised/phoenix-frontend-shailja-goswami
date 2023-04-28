@@ -78,3 +78,15 @@
   margin-top: 16px;
  }  
 }
+
+
+/* card lsit for the showa  */
+.card-show-brief{
+  background-color: rgba(47, 128, 237, 0.1);
+  border-radius: 12px;
+}
+
+
+.btn-theme-blue{
+  background-color: #3080ED;
+}
