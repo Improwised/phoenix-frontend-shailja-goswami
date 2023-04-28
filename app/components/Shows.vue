@@ -33,6 +33,17 @@ const shows = ref(props.showsData.data)
                   {{ show.release_year }}
                 </div>
               </div>
+              <div class="d-flex justify-content-between mt-3">
+                <NuxtLink :to="`/${show.id}/update`"
+                  ><img
+                    src="~/assets/images/icons/edit.svg"
+                    class="main__table-btn btn_edit"
+                /></NuxtLink>
+                <img
+                  src="~/assets/images/icons/delete.svg"
+                  class="main__table-btn btn_delete"
+                />
+              </div>
             </div>
           </div>
         </div>

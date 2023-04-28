@@ -131,6 +131,27 @@
   box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
 }
 
+.main__table-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #131720;
+  margin-right: 10px;
+  padding: 4px;
+}
+.btn_edit {
+  background-color: rgba(47,128,237,0.1);
+}
+.btn_delete{
+    background-color: rgba(235,87,87,0.1);
+
+}
 /* common classes */
 .h-24 {
   height: 24px;
