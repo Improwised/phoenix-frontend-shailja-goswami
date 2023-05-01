@@ -70,19 +70,19 @@ useHead({
             class="col-md-6 col-lg-4 offset-md-3 col-10 offset-1 offset-lg-4 pt-lg-3"
           >
             <div class="d-flex justify-content-between pt-lg-5">
-              <div class="pt-5">
+              <div class="pt-2 pt-md-0">
                 <img :src="twitter" />
               </div>
-              <div class="pt-5">
+              <div class="pt-2 pt-md-0">
                 <img :src="facebook" />
               </div>
-              <div class="pt-5">
+              <div class="pt-2 pt-md-0">
                 <img :src="instagram" />
               </div>
-              <div class="pt-5">
+              <div class="pt-2 pt-md-0">
                 <img :src="voko" />
               </div>
-              <div class="pt-5">
+              <div class="pt-2 pt-md-0">
                 <img :src="tictok" />
               </div>
             </div>
