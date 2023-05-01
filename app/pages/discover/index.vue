@@ -1,7 +1,6 @@
 <script setup>
 const config = useRuntimeConfig()
 const baseUrl = config.public.base_url
-console.log(baseUrl)
 const { data: showsData, pending } = await useLazyFetch(`${baseUrl}/title`)
 const searchString = ref('')
 let shows = {

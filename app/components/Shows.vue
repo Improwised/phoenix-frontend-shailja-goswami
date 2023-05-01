@@ -1,12 +1,17 @@
 <script setup>
 const props = defineProps(['showsData'])
 const shows = ref(props.showsData.data)
-// const isPending = ref(props.ShowsData.isPending)
+const isPending = ref(props.showsData.isPending)
 </script>
 
 <template>
   <div>
-    <div v-if="!isPending" class="row">
+    <div v-if="isPending" class="text-center mt-5">
+      <div class="spinner-border text-info" role="status"></div>
+
+      <div class="mt-3">Loading...</div>
+    </div>
+    <div v-else class="row">
       <div
         v-for="(show, index) in shows"
         :key="index"
