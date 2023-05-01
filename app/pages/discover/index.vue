@@ -1,9 +1,7 @@
 <script setup>
 const config = useRuntimeConfig()
 const baseUrl = config.public.base_url
-const { data: showsData, pending } = await useLazyAsyncData('showsData', () =>
-  $fetch(`${baseUrl}/title`)
-)
+const { data: showsData, pending } = await useFetch(`${baseUrl}/title`)
 const searchString = ref('')
 let shows = {
   data: showsData,
