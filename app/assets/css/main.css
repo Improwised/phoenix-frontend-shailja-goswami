@@ -78,26 +78,3 @@
   margin-top: 16px;
  }  
 }
-
-.card-show-brief {
-  background-color: rgba(47, 128, 237, 0.1);
-  border-radius: 12px;
-}
-
-.search-input {
-  width: calc(100% - 40px);
-  height: 40px;
-  border-radius: 16px;
-  background-color: #151f30;
-  border: none;
-  padding: 0 60px 0 20px;
-  font-size: 14px;
-  color: #fff;
-}
-.search-input:focus {
-  color: #fff;
-  background-color: #151f30;
-  border-color: #151f30;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
-}
