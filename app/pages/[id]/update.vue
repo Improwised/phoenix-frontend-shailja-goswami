@@ -55,11 +55,15 @@ async function handleSubmit(addDetails) {
 
 <template>
   <div class="container">
-    <h3 class="text-center mt-4 mb-3">Update Show</h3>
-    <FormShows
-      v-if="!noDataFound"
-      :show-details="showDetails"
-      @handle-submit="handleSubmit"
-    ></FormShows>
+    <div v-if="noDataFound">
+      <NoContentFound></NoContentFound>
+    </div>
+    <div v-else>
+      <h3 class="text-center mt-4 mb-3">Update Show</h3>
+      <FormShows
+        :show-details="showDetails"
+        @handle-submit="handleSubmit"
+      ></FormShows>
+    </div>
   </div>
 </template>
