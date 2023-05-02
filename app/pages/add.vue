@@ -1,15 +1,16 @@
 <script setup>
 const config = useRuntimeConfig()
 const baseUrl = config.public.base_url
-let showDeatils = reactive({
+const router = useRouter()
+let showDetails = {
   id: Math.random(),
   title: '',
-  description: '',
+  desc: '',
   type: '',
   release_year: '',
   run_time: '',
   genres: '',
-  imgUrl: '',
+  img_url: '',
   production_country: '',
   credits: [
     {
@@ -21,7 +22,7 @@ let showDeatils = reactive({
       img_url: '',
     },
   ],
-})
+}
 
 async function apiCall(addDetails) {
   const data = await useFetch(`${baseUrl}/title`, {
@@ -34,8 +35,9 @@ async function apiCall(addDetails) {
 async function handleSubmit(addDetails) {
   const data = await apiCall(addDetails)
   if (data.error.value == null) {
-    alert(data.value.title + ' ' + 'Show Added Successfully')
+    alert('Show Added Successfully')
     refreshNuxtData('showDeatils')
+    router.push('/discover')
   } else {
     alert(data.error.value)
   }
@@ -46,8 +48,7 @@ async function handleSubmit(addDetails) {
   <div class="container">
     <h3 class="text-center my-2">Add New Shows</h3>
     <FormShows
-      ref="addUpdateForm"
-      :show-deatils="showDeatils"
+      :show-details="showDetails"
       @handle-submit="handleSubmit"
     ></FormShows>
   </div>

@@ -1,61 +1,8 @@
 <script setup>
-const props = defineProps(['showDeatils'])
-const title = ref(props.showDeatils.title)
-const description = ref(props.showDeatils.description)
-const type = ref(props.showDeatils.type)
-const releaseYear = ref(props.showDeatils.releaseYear)
-const runTime = ref(props.showDeatils.runTime)
-const genres = ref(props.showDeatils.genres)
-const imgUrl = ref(props.showDeatils.imgUrl)
-const productionCountry = ref(props.showDeatils.productionCountr)
-const role = ref(props.showDeatils.credits.role)
-const name = ref(props.showDeatils.credits.name)
-const img_url = ref(props.showDeatils.credits.img_url)
-const character = ref(props.showDeatils.credits.character)
-let details = {
-  title: title.value,
-  description: description.value,
-  type: type.value,
-  release_year: releaseYear.value,
-  run_time: runTime.value,
-  genres: genres.value,
-  img_url: imgUrl.value,
-  production_country: productionCountry.value,
-  credits: [
-    {
-      title_id: title.value,
-      name: name.value,
-      character: character.value,
-      role: role.value,
-      img_url: img_url.value,
-    },
-  ],
-}
-watchEffect(() => {
-  details = {
-    title: title.value,
-    description: description.value,
-    type: type.value,
-    release_year: releaseYear.value,
-    run_time: runTime.value,
-    genres: genres.value,
-    img_url: imgUrl.value,
-    production_country: productionCountry.value,
-    credits: [
-      {
-        title_id: title.value,
-        name: name.value,
-        character: character.value,
-        role: role.value,
-        img_url: img_url.value,
-      },
-    ],
-  }
-})
+const props = defineProps(['showDetails'])
+let details = reactive(props.showDetails)
 const emit = defineEmits(['handleSubmit'])
-
 function submitForm() {
-  console.log(details)
   if (details.title !== '' && details.type !== '') {
     emit('handleSubmit', details)
   } else {
@@ -63,7 +10,6 @@ function submitForm() {
   }
 }
 </script>
-
 <template>
   <div>
     <div class="card card-show-brief">
@@ -73,7 +19,7 @@ function submitForm() {
             <label for="title" class="form-label">Title</label>
             <input
               id="title"
-              v-model="title"
+              v-model="details.title"
               type="text"
               class="form-control search-input"
               placeholder="Movie name"
@@ -85,7 +31,7 @@ function submitForm() {
             <label for="type" class="form-label">Type</label>
             <select
               id="type"
-              v-model="type"
+              v-model="details.type"
               class="form-select search-input"
               aria-label="Choose"
               required
@@ -100,7 +46,7 @@ function submitForm() {
             <label for="description" class="form-label">Description</label>
             <input
               id="description"
-              v-model="description"
+              v-model="details.desc"
               type="text"
               class="form-control search-input"
               placeholder="Description"
@@ -110,7 +56,7 @@ function submitForm() {
             <label for="releaseYear" class="form-label">Release Year</label>
             <input
               id="releaseYear"
-              v-model="releaseYear"
+              v-model="details.release_year"
               type="number"
               pattern="[1-9]{1}[0-9]{3}"
               class="form-control search-input"
@@ -121,7 +67,7 @@ function submitForm() {
             <label for="runTime" class="form-label">Run Time</label>
             <input
               id="runTime"
-              v-model="runTime"
+              v-model="details.run_time"
               type="number"
               class="form-control search-input"
               placeholder="Show run time"
@@ -131,7 +77,7 @@ function submitForm() {
             <label for="genres" class="form-label">genres</label>
             <select
               id="genres"
-              v-model="genres"
+              v-model="details.genres"
               class="form-select search-input"
               aria-label="genres"
             >
@@ -150,7 +96,7 @@ function submitForm() {
             >
             <input
               id="imgUrl"
-              v-model="imgUrl"
+              v-model="details.img_url"
               type="text"
               class="form-control search-input"
               placeholder="URl starting with http:// "
@@ -162,11 +108,11 @@ function submitForm() {
             >
             <select
               id="productionCountry"
-              v-model="productionCountry"
+              v-model="details.production_country"
               class="form-select search-input"
               aria-label="productionCountry"
             >
-              <option value="" selected>Choose...</option>
+              <option selected>Choose...</option>
               <option value="UK">UK</option>
               <option value="US">US</option>
               <option value="India">India</option>
@@ -175,52 +121,57 @@ function submitForm() {
             </select>
           </div>
           <h4 class="pt-2">Add Show's Cast</h4>
-          <div class="col-md-6">
-            <label for="name" class="form-label">Name</label>
-            <input
-              id="name"
-              v-model="name"
-              type="text"
-              class="form-control search-input"
-              placeholder="Person's name"
-            />
+          <div
+            v-for="(credit, index) of props.showDetails.credits"
+            :key="index"
+            class="row g-3"
+          >
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input
+                id="name"
+                v-model="credit.name"
+                type="text"
+                class="form-control search-input"
+                placeholder="Person's name"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="character" class="form-label">character Name</label>
+              <input
+                id="character"
+                v-model="credit.character"
+                type="text"
+                class="form-control search-input"
+                placeholder="Character name"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="role" class="form-label">Role</label>
+              <input
+                id="role"
+                v-model="credit.role"
+                type="text"
+                class="form-control search-input"
+                placeholder="Role"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="image" class="form-label">Image</label>
+              <input
+                id="image"
+                v-model="credit.img_url"
+                type="text"
+                class="form-control search-input"
+                placeholder="Image URL"
+              />
+            </div>
           </div>
-          <div class="col-md-6">
-            <label for="character" class="form-label">character Name</label>
-            <input
-              id="character"
-              v-model="character"
-              type="text"
-              class="form-control search-input"
-              placeholder="Character name"
-            />
-          </div>
-          <div class="col-md-6">
-            <label for="role" class="form-label">Role</label>
-            <input
-              id="role"
-              v-model="role"
-              type="text"
-              class="form-control search-input"
-              placeholder="Role"
-            />
-          </div>
-          <div class="col-md-6">
-            <label for="image" class="form-label">Image</label>
-            <input
-              id="image"
-              v-model="img_url"
-              type="text"
-              class="form-control search-input"
-              placeholder="Image URL"
-            />
-          </div>
-
           <div class="col-12 text-center mb-2 mt-4">
             <button
               type="submit"
               class="btn btn-primary"
-              @click.prevent="submitForm(details)"
+              @click.prevent="submitForm()"
             >
               Add Show
             </button>
