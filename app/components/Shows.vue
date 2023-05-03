@@ -1,7 +1,20 @@
 <script setup>
 const props = defineProps(['showsData'])
+const config = useRuntimeConfig()
+const base_url = config.public.base_url
 const shows = ref(props.showsData.data)
 const isPending = ref(props.showsData.isPending)
+
+async function deleteShow(id, show) {
+  if (confirm('Are you sure you wanted to remove ' + show + ' this show')) {
+    const deleted = await useFetch(`${base_url}/title/${id}`, {
+      method: 'DELETE',
+    })
+    window.location.href = '/discover'
+  } else {
+    return
+  }
+}
 </script>
 
 <template>
@@ -50,7 +63,10 @@ const isPending = ref(props.showsData.isPending)
                 /></NuxtLink>
                 <img
                   src="~/assets/images/icons/delete.svg"
-                  class="main__table-btn btn_delete"
+                  class="main__table-btn btn_delete cursor-pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  @click="deleteShow(show.id, show.title)"
                 />
               </div>
             </div>
