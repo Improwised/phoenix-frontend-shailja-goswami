@@ -28,24 +28,14 @@ const { data: showDetails } = await useFetch(`${base_url}/title/${id}`)
           Release Year :
           <span class="text-gray"> {{ showDetails.release_year }}</span>
         </div>
-        <div v-if="showDetails.genres.length > 0" class="mt-2">
+        <div v-if="showDetails.genres" class="mt-2">
           Genres :
-          <span
-            v-for="(genres, index) of showDetails.genres"
-            :key="index"
-            class="pe-3 text-gray"
-          >
-            {{ genres }}</span
-          >
+          <span class="pe-3 text-gray"> {{ showDetails.genres }}</span>
         </div>
-        <div v-if="showDetails.production_countries.length > 0" class="mt-2">
+        <div v-if="showDetails.production_countries" class="mt-2">
           Production Country :
-          <span
-            v-for="(country, index) of showDetails.production_countries"
-            :key="index"
-            class="pe-3 text-gray"
-          >
-            {{ country }}</span
+          <span class="pe-3 text-gray">
+            {{ showDetails.production_countries }}</span
           >
         </div>
         <div class="mt-3 d-flex align-items-center">
