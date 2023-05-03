@@ -5,27 +5,7 @@ const router = useRouter()
 const route = useRoute()
 const id = route.params.id
 const noDataFound = ref(false)
-let showDetails = {
-  id: '',
-  title: '',
-  desc: '',
-  type: '',
-  release_year: '',
-  run_time: '',
-  genres: '',
-  img_url: '',
-  production_country: '',
-  credits: [
-    {
-      person_id: '',
-      title_id: '',
-      name: '',
-      character: '',
-      role: '',
-      img_url: '',
-    },
-  ],
-}
+let showDetails = {}
 const { data } = await useFetch(`${baseUrl}/title/${id}`)
 if (data.value === null) {
   noDataFound.value = true

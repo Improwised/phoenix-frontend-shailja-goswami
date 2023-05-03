@@ -172,7 +172,8 @@
           "img_url": "https://m.media-amazon.com/images/M/MV5BMGFlNTZiY2MtOTIxYi00NGQ3LWI1YmMtODY3MjQ0M2JhZmI3XkEyXkFqcGdeQXVyMzQ2MDUxMTg@._V1_QL75_UY280_CR59,0,280,280_.jpg"
         }
       ],
-      "production_country": "US"
+      "production_country": "US",
+      "run_time": 12
     },
     {
       "id": "tm820190",
