@@ -93,6 +93,9 @@
   background-color: #3080ED;
 }
 
+.text-theme-blue {
+  color: #3080ED;
+}
 .img-show {
   height: 320px;
   width: auto;

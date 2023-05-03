@@ -24,7 +24,11 @@ const isPending = ref(props.showsData.isPending)
             :alt="show.title"
           />
           <div class="card-body">
-            <h5 class="card-title text-truncate">{{ show.title }}</h5>
+            <NuxtLink :to="show.id" class="text-decoration-none white-text-link"
+              ><h5 class="card-title text-truncate">
+                {{ show.title }}
+              </h5></NuxtLink
+            >
             <div class="card-text">
               <div class="show-desc text-gray mt-2">
                 {{ show.desc }}

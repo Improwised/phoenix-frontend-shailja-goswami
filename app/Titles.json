@@ -9,8 +9,8 @@
           "img_url":"https://m.media-amazon.com/images/M/MV5BNDc5NjY1NWItZDcxYS00ZjBjLTg4YWItMzg2YzkzMzkyMTAzXkEyXkFqcGdeQXVyMTM1MTE1NDM1._V1_FMjpg_UY2000_.jpg",
           "age_certification": "TV-PG",
           "runtime": 78,
-          "genres": "[]",
-          "production_countries": "[]",
+          "genres": ["drama","action"],
+          "production_countries": [],
           "credits": [
               {
                   "person_id": 99597,
@@ -181,8 +181,8 @@
           "release_year": 2020,
           "img_url":"https://m.media-amazon.com/images/M/MV5BM2UxYTlhY2MtNjBiMC00NzQ1LWIxZjQtZTllNTI3MWRhNTU4XkEyXkFqcGdeQXVyMTI4Mjg4MjA@._V1_QL75_UY562_CR11,0,380,562_.jpg",
           "runtime": 108,
-          "genres": "['thriller', 'action', 'horror', 'drama']",
-          "production_countries": "['KR']",
+          "genres": ["thriller", "action", "horror", "drama"],
+          "production_countries": ["KR"],
           "credits": [
               {
                   "person_id": 99591,
@@ -210,8 +210,8 @@
           "release_year": 2019,
           "runtime": 92,
           "img_url":"https://m.media-amazon.com/images/M/MV5BYjBlZGZkODEtNjUxMC00NWY1LWJkYWUtYzY2NDIxZjkwZmQyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UY562_CR7,0,380,562_.jpg",
-          "genres": "['drama', 'history', 'documentation']",
-          "production_countries": "['IT']",
+          "genres": ["drama", "history", "documentation"],
+          "production_countries": ["IT"],
           "credits": [
               {
                   "person_id": 99593,
@@ -241,8 +241,8 @@
           "release_year": 2018,
           "runtime": 102,
           "img_url":"https://m.media-amazon.com/images/M/MV5BNThlMWQ5YTItNTA1ZC00MDc3LWE4NGItZDZiMmU1OWE5MzMyXkEyXkFqcGdeQXVyNzkzODk2Mzc@._V1_QL75_UY562_CR3,0,380,562_.jpg",
-          "genres": "['comedy', 'drama', 'romance']",
-          "production_countries": "['ID']",
+          "genres": ["comedy", "drama", "romance"],
+          "production_countries": ["ID"],
           "credits": [
               {
                   "person_id": 99595,
@@ -270,8 +270,8 @@
           "release_year": 2020,
           "runtime": 104,
           "img_url":"https://m.media-amazon.com/images/M/MV5BYzI5YzgxNmUtNmUxYy00NDMzLWE3YzItMzRhMDVhMTllZGQwXkEyXkFqcGdeQXVyNzEzNjU1NDg@._V1_QL75_UY562_CR2,0,380,562_.jpg",
-          "genres": "['drama', 'romance', 'comedy']",
-          "production_countries": "['ID']",
+          "genres": ["drama", "romance", "comedy"],
+          "production_countries": ["ID"],
           "credits": [
               {
                   "person_id": 99567,
@@ -300,8 +300,8 @@
           "age_certification": "TV-MA",
           "runtime": 37,
           "img_url":"https://m.media-amazon.com/images/M/MV5BOGU4YjhlYTQtMWI3Ny00M2JiLWJhZTEtNzkzZmRmNDVmMmExXkEyXkFqcGdeQXVyMjIwNTI1MTM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-          "genres": "['comedy']",
-          "production_countries": "['US']",
+          "genres": ["comedy"],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 94567,
@@ -329,8 +329,8 @@
           "release_year": 2017,
           "runtime": 99,
           "img_url":"https://m.media-amazon.com/images/M/MV5BNDU3Mzk0ODAtMzI0Ni00YTUzLWIyNDctMDE3OTE3OTk4OWE2XkEyXkFqcGdeQXVyNTM0MDc1ODE@._V1_QL75_UX380_CR0,14,380,562_.jpg",
-          "genres": "['comedy', 'romance', 'drama']",
-          "production_countries": "['US']",
+          "genres": ["comedy", "romance", "drama"],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 97567,
@@ -359,8 +359,8 @@
           "age_certification": "PG-13",
           "runtime": 118,
           "img_url":"https://m.media-amazon.com/images/M/MV5BODI0NDI0M2YtOGM4MC00OGE2LWI4MDUtMzA4YTJiNDMwYjZiXkEyXkFqcGdeQXVyNjU2NzU0MzY@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-          "genres": "['drama', 'romance']",
-          "production_countries": "['NG']",
+          "genres": ["drama", "romance"],
+          "production_countries": ["NG"],
           "credits": [
               {
                   "person_id": 97767,
@@ -389,8 +389,8 @@
           "age_certification": "TV-MA",
           "runtime": 52,
           "img_url":"https://m.media-amazon.com/images/M/MV5BZDRjMWUxMmYtOTNjOC00MWQ2LWEzYjktZTI5MzM4NzkwMTFmXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_QL75_UY562_CR11,0,380,562_.jpg",
-          "genres": "['reality', 'documentation']",
-          "production_countries": "['US']",
+          "genres": ["reality", "documentation"],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 97667,
@@ -416,8 +416,8 @@
           "release_year": 2022,
           "runtime": 90,
           "img_url":"https://m.media-amazon.com/images/M/MV5BOWE1YjBmYTItMzc1Yi00YTAyLWE0OTgtNTJmMGRhNzU2NTI4XkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_QL75_UY562_CR6,0,380,562_.jpg",
-          "genres": "['action', 'comedy', 'western']",
-          "production_countries": "['IT']",
+          "genres": ["action", "comedy", "western"],
+          "production_countries": ["IT"],
           "credits": [
               {
                   "person_id": 37667,
@@ -445,8 +445,8 @@
           "release_year": 2023,
           "runtime": 124,
           "img_url":"https://m.media-amazon.com/images/M/MV5BOGRkMjBhZGQtZDM4Yi00NGUwLThhMTUtMDI5NTcxMjc1ZTQ1XkEyXkFqcGdeQXVyMTIyMjI4OTkx._V1_QL75_UY562_CR11,0,380,562_.jpg",
-          "genres": "['thriller', 'crime', 'drama']",
-          "production_countries": "['TR']",
+          "genres": ["thriller", "crime", "drama"],
+          "production_countries": ["TR"],
           "credits": [
               {
                   "person_id": 36667,
@@ -475,8 +475,8 @@
           "age_certification": "R",
           "runtime": 89,
           "img_url":"https://m.media-amazon.com/images/M/MV5BZDdiYjg2ZDEtMGY4MS00OTNiLWJjYzctNzUyYjk3ZmJkMzRkXkEyXkFqcGdeQXVyOTg4MDYyNw@@._V1_QL75_UY562_CR0,0,380,562_.jpg",
-          "genres": "['thriller', 'crime', 'action']",
-          "production_countries": "['CA', 'US']",
+          "genres": ["thriller", "crime", "action"],
+          "production_countries": ["CA", "US"],
           "credits": [
               {
                   "person_id": 39667,
@@ -506,8 +506,8 @@
           "age_certification": "TV-14",
           "runtime": 75,
           "img_url":"https://m.media-amazon.com/images/M/MV5BYjljZGVmOWUtMGE4My00OGEyLWE2MWUtOWViYmE1YjQ5YWQzXkEyXkFqcGdeQXVyMzE4MDkyNTA@._V1_QL75_UY562_CR6,0,380,562_.jpg",
-          "genres": "['drama', 'thriller', 'romance', 'action', 'comedy', 'history']",
-          "production_countries": "['KR']",
+          "genres": ["drama", "thriller", "romance", "action", "comedy", "history"],
+          "production_countries": ["KR"],
           "credits": [
               {
                   "person_id": 33667,
@@ -536,8 +536,8 @@
           "age_certification": "TV-14",
           "runtime": 37,
           "img_url":"https://m.media-amazon.com/images/M/MV5BY2Q2Zjc3NmUtNWEyNS00OGIzLTk3YzQtYTQ5OTI2NTFhNjkyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UY562_CR11,0,380,562_.jpg",
-          "genres": "['documentation', 'reality']",
-          "production_countries": "['US']",
+          "genres": ["documentation", "reality"],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 13667,
@@ -565,8 +565,8 @@
           "release_year": 2016,
           "runtime": 108,
           "img_url":"https://m.media-amazon.com/images/M/MV5BY2JjNTA0OWItMjhlMC00ZTYzLTlhODktODFiNjg3ZTZmNTY4L2ltYWdlXkEyXkFqcGdeQXVyMzkwMTMxNDQ@._V1_SL200_QL1.jpg",
-          "genres": "['comedy', 'drama', 'european']",
-          "production_countries": "['ES']",
+          "genres": ["comedy", "drama", "european"],
+          "production_countries": ["ES"],
           "credits": [
               {
                   "person_id": 13867,
@@ -594,8 +594,8 @@
           "release_year": 2014,
           "runtime": 44,
           "img_url":"https://m.media-amazon.com/images/M/MV5BNTc3NzgwNzE1OF5BMl5BanBnXkFtZTgwODc0MjEwNzE@._V1_QL75_UY280_CR47,0,280,280_.jpg",
-          "genres": "[]",
-          "production_countries": "['US']",
+          "genres": [],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 16867,
@@ -623,8 +623,8 @@
           "release_year": 2021,
           "runtime": 82,
           "img_url":"https://m.media-amazon.com/images/M/MV5BZDE3NjI3YWQtZDdmNC00YTM2LWIzNTMtNjI3YTdmMWM0MWUyXkEyXkFqcGdeQXVyMTM2MTI3MTI1._V1_SL200_QL1.jpg",
-          "genres": "['documentation', 'family']",
-          "production_countries": "[]",
+          "genres": ["documentation", "family"],
+          "production_countries": [],
           "credits": [
               {
                   "person_id": 16967,
@@ -652,8 +652,8 @@
           "release_year": 2020,
           "runtime": 100,
           "img_url":"https://m.media-amazon.com/images/M/MV5BMWQ2ZGY3ZWMtY2RlZC00OWJiLTgxMjEtNGNmNWJkNzU4NzVmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_QL75_UY562_CR9,0,380,562_.jpg",
-          "genres": "['drama']",
-          "production_countries": "['ID']",
+          "genres": ["drama"],
+          "production_countries": ["ID"],
           "credits": [
               {
                   "person_id": 15967,
@@ -681,8 +681,8 @@
           "release_year": 2021,
           "runtime": 102,
           "img_url":"https://m.media-amazon.com/images/M/MV5BMmQ1NTlmZmMtYzIxMS00ODgxLTk4ODYtMWE5N2VkZDEwOTI0XkEyXkFqcGdeQXVyMTE5Njc3NTk3._V1_SL200_QL1.jpg",
-          "genres": "['family', 'fantasy', 'comedy', 'romance']",
-          "production_countries": "['ES']",
+          "genres": ["family", "fantasy", "comedy", "romance"],
+          "production_countries": ["ES"],
           "credits": [
               {
                   "person_id": 15907,
@@ -710,8 +710,8 @@
           "release_year": 2015,
           "runtime": 60,
           "img_url":"https://m.media-amazon.com/images/M/MV5BMTkxNTcxMzgyMF5BMl5BanBnXkFtZTcwNTQyNTA5Ng@@._V1_QL75_UY562_CR10,0,380,562_.jpg",
-          "genres": "['drama', 'music', 'scifi', 'thriller']",
-          "production_countries": "['EG']",
+          "genres": ["drama", "music", "scifi", "thriller"],
+          "production_countries": ["EG"],
           "credits": [
               {
                   "person_id": 15607,
@@ -739,8 +739,8 @@
           "release_year": 2022,
           "runtime": 92,
           "img_url":"https://m.media-amazon.com/images/M/MV5BMzk2M2NkNDMtNzY5Zi00NjA3LWI3ODktYTAxM2VhY2UzMzI2XkEyXkFqcGdeQXVyMjM4MjgwNzI@._V1_QL75_UY562_CR42,0,380,562_.jpg",
-          "genres": "['documentation']",
-          "production_countries": "['ES']",
+          "genres": ["documentation"],
+          "production_countries": ["ES"],
           "credits": [
               {
                   "person_id": 13607,
@@ -769,8 +769,8 @@
           "age_certification": "R",
           "runtime": 130,
           "img_url":"https://m.media-amazon.com/images/M/MV5BNTEzMjk3NzkxMV5BMl5BanBnXkFtZTgwNjY2NDczNDM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-          "genres": "['drama', 'action', 'history', 'war']",
-          "production_countries": "['US']",
+          "genres": ["drama", "action", "history", "war"],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 16807,
@@ -799,8 +799,8 @@
           "age_certification": "R",
           "runtime": 95,
           "img_url":"https://m.media-amazon.com/images/M/MV5BZTBiYzZhMWUtNzgzNS00ZjkzLTgxZjQtMGZmYjNhYzE1ODdlXkEyXkFqcGdeQXVyNDQ3Njc5MzM@._V1_QL75_UX380_CR0,7,380,562_.jpg",
-          "genres": "['horror', 'thriller']",
-          "production_countries": "['EG']",
+          "genres": ["horror", "thriller"],
+          "production_countries": ["EG"],
           "credits": [
               {
                   "person_id": 16888,
@@ -829,8 +829,8 @@
           "age_certification": "TV-MA",
           "runtime": 58,
           "img_url":"https://m.media-amazon.com/images/M/MV5BYmRhZjkyMjEtNjRkMS00MDQ0LTg2NGMtMTQ3ZjE0NjJmMjM2L2ltYWdlXkEyXkFqcGdeQXVyNTY0MTkxMTg@._V1_SL200_QL1.jpg",
-          "genres": "['drama', 'thriller']",
-          "production_countries": "['US']",
+          "genres": ["drama", "thriller"],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 16558,
@@ -859,8 +859,8 @@
           "age_certification": "TV-MA",
           "runtime": 38,
           "img_url":"https://m.media-amazon.com/images/M/MV5BNDhkOGY3ZjgtYjAyNS00Njk2LTgzZDUtZjMzNzM5NTg0NDIzXkEyXkFqcGdeQXVyODI2NTA2NA@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-          "genres": "['documentation']",
-          "production_countries": "['US']",
+          "genres": ["documentation"],
+          "production_countries": ["US"],
           "credits": [
               {
                   "person_id": 95558,
