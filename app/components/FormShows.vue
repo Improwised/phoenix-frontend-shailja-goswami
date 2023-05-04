@@ -173,7 +173,7 @@ function submitForm() {
               class="btn btn-primary"
               @click.prevent="submitForm()"
             >
-              Add Show
+              Save Show
             </button>
           </div>
         </form>
