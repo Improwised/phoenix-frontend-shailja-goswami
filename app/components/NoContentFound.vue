@@ -8,7 +8,7 @@
       class="img-fluid img-nocontent"
     />
     <h3>No Content Found</h3>
-    <NuxtLink to="/discover" class="text-decoration-none"
+    <NuxtLink to="/discover?_page=1" class="text-decoration-none"
       >Discover new show</NuxtLink
     >
   </div>

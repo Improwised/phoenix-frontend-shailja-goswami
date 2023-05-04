@@ -31,7 +31,7 @@ let shows = {
           With Plex you can watch over 20,000 free movies and shows, plus Live
           TV on almost any device. What are you waiting for?
         </h5>
-        <NuxtLink to="/discover">
+        <NuxtLink to="/discover?_page=1">
           <div class="btn btn-theme-blue mt-3">Discover More Shows</div>
         </NuxtLink>
       </div>
@@ -42,7 +42,7 @@ let shows = {
           <div><h2>Most Popular Shows</h2></div>
           <div>
             <NuxtLink
-              to="/discover"
+              to="/discover?_page=1"
               class="text-decoration-none white-text-link"
               >View All</NuxtLink
             >
