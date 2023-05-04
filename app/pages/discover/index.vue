@@ -3,8 +3,15 @@ const config = useRuntimeConfig()
 const baseUrl = config.public.base_url
 const { data: showsData, pending } = await useFetch(`${baseUrl}/title`)
 const searchString = ref('')
+const searchedShow = computed(() => {
+  return showsData.value.filter((shows) => {
+    return (
+      shows.title.toLowerCase().indexOf(searchString.value.toLowerCase()) != -1
+    )
+  })
+})
 let shows = {
-  data: showsData,
+  data: searchedShow,
   isPending: pending,
 }
 </script>
