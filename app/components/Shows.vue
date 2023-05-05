@@ -1,7 +1,25 @@
 <script setup>
 const props = defineProps(['showsData'])
+const config = useRuntimeConfig()
+const base_url = config.public.base_url
 const shows = ref(props.showsData.data)
 const isPending = ref(props.showsData.isPending)
+const showModal = ref(false)
+let id
+function openModal(showId) {
+  showModal.value = true
+  id = showId
+}
+function closeModal() {
+  showModal.value = false
+  refreshNuxtData()
+}
+async function deleteShow() {
+  const deleted = await useFetch(`${base_url}/title/${id}`, {
+    method: 'DELETE',
+  })
+  window.location.href = '/discover?_page=1'
+}
 </script>
 
 <template>
@@ -50,7 +68,10 @@ const isPending = ref(props.showsData.isPending)
                 /></NuxtLink>
                 <img
                   src="~/assets/images/icons/delete.svg"
-                  class="main__table-btn btn_delete"
+                  class="main__table-btn btn_delete cursor-pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#deleteModal"
+                  @click="openModal(show.id)"
                 />
               </div>
             </div>
@@ -59,4 +80,58 @@ const isPending = ref(props.showsData.isPending)
       </div>
     </div>
   </div>
+  <div
+    id="deleteModal"
+    class="modal fade"
+    tabindex="-1"
+    aria-labelledby="deleteModalLabel"
+    :aria-hidden="showModal ? true : false"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content modal-dark">
+        <div class="modal-header">
+          <h5 id="deleteModalLabel" class="modal-title">Delete Show</h5>
+        </div>
+        <div class="modal-body">Are you sure You want to remove the show ?</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+            @click="closeModal()"
+          >
+            Close
+          </button>
+          <button
+            type="button"
+            class="btn btn-theme-blue"
+            @click="deleteShow()"
+          >
+            Save changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+<style>
+.modal-dark {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  pointer-events: auto;
+  background-color: #192842;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-header {
+  border-bottom: #151f30;
+}
+
+.modal-footer {
+  border: none;
+}
+</style>
