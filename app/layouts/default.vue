@@ -16,9 +16,7 @@ useHead({
     <nav class="navbar nav-navy navbar-expand-lg">
       <div class="container">
         <NuxtLink to="/"
-          ><img
-            src="http://flixtv.volkovdesign.com/main/img/logo.svg"
-            class="img-fluid"
+          ><img src="~/assets/images/logo/logo.svg" class="img-fluid"
         /></NuxtLink>
         <button
           class="navbar-toggler"
@@ -50,6 +48,14 @@ useHead({
                   aria-current="page"
                   to="/discover?_page=1"
                   >Discover</NuxtLink
+                >
+              </li>
+              <li class="nav-item px-2">
+                <NuxtLink
+                  class="nav-link white-text-link"
+                  aria-current="page"
+                  to="/add"
+                  >Add Show</NuxtLink
                 >
               </li>
             </ul>

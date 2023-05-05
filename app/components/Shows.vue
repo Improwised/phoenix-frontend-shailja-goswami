@@ -1,9 +1,8 @@
 <script setup>
-const props = defineProps(['showsData'])
-const config = useRuntimeConfig()
-const base_url = config.public.base_url
-const shows = ref(props.showsData.data)
-const isPending = ref(props.showsData.isPending)
+const props = defineProps(['shows'])
+const { base_url } = useRuntimeConfig()
+const shows = ref(props.shows.data)
+const isPending = ref(props.isPending)
 const showModal = ref(false)
 let id
 function openModal(showId) {

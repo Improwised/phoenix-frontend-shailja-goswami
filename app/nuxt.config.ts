@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Nuxt3',
+      title: 'FlixTv',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,6 +22,11 @@ export default defineNuxtConfig({
       link: [
         //This for just example how to add css
         { rel: 'stylesheet', href: 'https://awesome-lib.css' },
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: 'http://flixtv.volkovdesign.com/main/img/logo.svg',
+        },
       ],
     },
   },

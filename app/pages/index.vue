@@ -2,15 +2,14 @@
 definePageMeta({
   layout: 'default',
 })
-const config = useRuntimeConfig()
-const base_url = config.public.base_url
-const { data: showsData } = await useFetch(`${base_url}/title`)
-const firstFiveShowData = computed(() => {
-  return showsData.value.slice(0, 4)
+const { base_url: base_url } = useRuntimeConfig()
+const { data: title, pending } = await useFetch(`${base_url}/title`)
+const firstFiveShow = computed(() => {
+  return title.value.slice(0, 4)
 })
 let shows = {
-  data: firstFiveShowData,
-  isPending: false,
+  data: firstFiveShow,
+  isPending: pending,
 }
 </script>
 <template>
@@ -49,7 +48,7 @@ let shows = {
           </div>
         </div>
         <div>
-          <Shows :shows-data="shows"></Shows>
+          <Shows :shows="shows"></Shows>
         </div>
       </div>
       <div class="container mt-5">
@@ -64,7 +63,7 @@ let shows = {
           </div>
         </div>
         <div>
-          <Shows :shows-data="shows"></Shows>
+          <Shows :shows="shows"></Shows>
         </div>
       </div>
       <div class="container mt-5">
@@ -79,7 +78,7 @@ let shows = {
           </div>
         </div>
         <div>
-          <Shows :shows-data="shows"></Shows>
+          <Shows :shows="shows"></Shows>
         </div>
       </div>
     </section>
