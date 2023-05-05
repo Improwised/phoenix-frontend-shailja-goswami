@@ -48,7 +48,7 @@ useHead({
                 <NuxtLink
                   class="nav-link white-text-link"
                   aria-current="page"
-                  to="/discover"
+                  to="/discover?_page=1"
                   >Discover</NuxtLink
                 >
               </li>

@@ -37,7 +37,7 @@ async function handleSubmit(addDetails) {
   if (data.error.value == null) {
     alert('Show Added Successfully')
     refreshNuxtData('showDeatils')
-    router.push('/discover')
+    router.push('/discover?_page=1')
   } else {
     alert(data.error.value)
   }
