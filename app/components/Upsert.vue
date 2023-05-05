@@ -1,6 +1,6 @@
 <script setup>
-const props = defineProps(['showDetails'])
-let details = reactive(props.showDetails)
+const props = defineProps(['shows'])
+let details = reactive(props.shows)
 const emit = defineEmits(['handleSubmit'])
 function submitForm() {
   if (details.title !== '' && details.type !== '') {
@@ -37,8 +37,8 @@ function submitForm() {
               required
             >
               <option selected>Choose...</option>
-              <option value="tvShow">Tv Show</option>
-              <option value="movie">Movie</option>
+              <option value="SHOW">Tv Show</option>
+              <option value="MOVIE">Movie</option>
             </select>
           </div>
           <div class="invalid-feedback">Please choose a username.</div>
@@ -120,12 +120,13 @@ function submitForm() {
               <option value="Japan">Japan</option>
             </select>
           </div>
-          <h4 class="pt-2">Add Show's Cast</h4>
+          <h4 class="pt-4">Add Show's Credits</h4>
           <div
-            v-for="(credit, index) of props.showDetails.credits"
+            v-for="(credit, index) of shows.credits"
             :key="index"
-            class="row g-3"
+            class="row g-3 px-5"
           >
+            <h5>Thespian {{ index + 1 }}</h5>
             <div class="col-md-6">
               <label for="name" class="form-label">Name</label>
               <input
@@ -166,6 +167,7 @@ function submitForm() {
                 placeholder="Image URL"
               />
             </div>
+            <hr />
           </div>
           <div class="col-12 text-center mb-2 mt-4">
             <button

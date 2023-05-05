@@ -1,13 +1,13 @@
 <script setup>
 const route = useRoute()
-const queryParam = route.params.type
-const config = useRuntimeConfig()
-const base_url = config.public.base_url
-const url = `${base_url}/title?type=${queryParam}`
-const { data: showsData, pending } = await useFetch(url)
+const type = route.params.type
+const { base_url } = useRuntimeConfig()
+const { data: title, pending } = await useFetch(
+  `${base_url}/title?type=${type}`
+)
 
 let show = {
-  data: showsData,
+  data: title,
   isPending: pending,
 }
 </script>
@@ -15,8 +15,8 @@ let show = {
 <template>
   <div class="container">
     <h2 class="mt-4">
-      {{ queryParam == 'SHOW' ? 'Explore All Tv Shows' : 'Explore All Movies' }}
+      {{ type == 'SHOW' ? 'Explore All Tv Shows' : 'Explore All Movies' }}
     </h2>
-    <Shows :shows-data="show"></Shows>
+    <Shows :shows="show"></Shows>
   </div>
 </template>

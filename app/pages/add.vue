@@ -1,8 +1,7 @@
 <script setup>
-const config = useRuntimeConfig()
-const baseUrl = config.public.base_url
+const { base_url: baseUrl } = useRuntimeConfig()
 const router = useRouter()
-let showDetails = {
+let show = {
   id: 's_' + Math.random(),
   title: '',
   desc: '',
@@ -24,18 +23,18 @@ let showDetails = {
   ],
 }
 
-async function apiCall(addDetails) {
+async function apiCall(showDetails) {
   const data = await useFetch(`${baseUrl}/title`, {
     headers: { 'Content-type': 'application/json' },
     method: 'POST',
-    body: JSON.stringify(addDetails),
+    body: JSON.stringify(showDetails),
   })
   return data
 }
-async function handleSubmit(addDetails) {
-  const data = await apiCall(addDetails)
+async function handleSubmit(showDetails) {
+  const data = await apiCall(showDetails)
   if (data.error.value == null) {
-    alert('Show Added Successfully')
+    alert('Show added successfully')
     refreshNuxtData('showDeatils')
     router.push('/discover?_page=1')
   } else {
@@ -47,9 +46,6 @@ async function handleSubmit(addDetails) {
 <template>
   <div class="container">
     <h3 class="text-center my-2">Add New Shows</h3>
-    <FormShows
-      :show-details="showDetails"
-      @handle-submit="handleSubmit"
-    ></FormShows>
+    <Upsert :shows="show" @handle-submit="handleSubmit"></Upsert>
   </div>
 </template>
