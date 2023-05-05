@@ -3,7 +3,7 @@ const config = useRuntimeConfig()
 const baseUrl = config.public.base_url
 const route = useRoute()
 let _page = route.query._page
-const url = `${baseUrl}/title?_page=${_page}&_limit=2`
+const url = `${baseUrl}/title?_page=${_page}&_limit=8`
 const { data: showsData, pending } = await useFetch(url)
 const searchString = ref('')
 let shows = {
