@@ -3,7 +3,7 @@ const config = useRuntimeConfig()
 const baseUrl = config.public.base_url
 const router = useRouter()
 let showDetails = {
-  id: Math.random(),
+  id: 's_' + Math.random(),
   title: '',
   desc: '',
   type: '',

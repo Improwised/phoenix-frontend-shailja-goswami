@@ -5,9 +5,16 @@ const route = useRoute()
 let _page = route.query._page
 const url = `${baseUrl}/title?_page=${_page}&_limit=8`
 const { data: showsData, pending } = await useFetch(url)
+const searchedShow = computed(() => {
+  return showsData.value.filter((shows) => {
+    return (
+      shows.title.toLowerCase().indexOf(searchString.value.toLowerCase()) != -1
+    )
+  })
+})
 const searchString = ref('')
 let shows = {
-  data: showsData,
+  data: searchedShow,
   isPending: pending,
 }
 async function clickNext() {
@@ -25,7 +32,7 @@ async function clickPrev() {
     <div
       class="d-flex justify-content-between card-show-brief p-3 align-items-center"
     >
-      <div class="col-3">
+      <div class="col-lg-3 col-8">
         <input
           v-model="searchString"
           class="form-control search-input"
@@ -41,9 +48,11 @@ async function clickPrev() {
     <div class="col-12">
       <Shows :shows-data="shows"></Shows>
     </div>
+    <div v-if="searchedShow.length == 0">
+      <NoContentFound></NoContentFound>
+    </div>
     <div class="d-flex justify-content-center mt-4">
       <nav>
-        {{}}
         <ul class="pagination">
           <li :class="['page-item', _page <= 1 ? 'disabled' : '']">
             <a

@@ -16,9 +16,7 @@ useHead({
     <nav class="navbar nav-navy navbar-expand-lg">
       <div class="container">
         <NuxtLink to="/"
-          ><img
-            src="http://flixtv.volkovdesign.com/main/img/logo.svg"
-            class="img-fluid"
+          ><img src="~/assets/images/logo/logo.svg" class="img-fluid"
         /></NuxtLink>
         <button
           class="navbar-toggler"
