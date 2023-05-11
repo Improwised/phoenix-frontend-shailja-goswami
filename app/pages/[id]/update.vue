@@ -16,7 +16,7 @@ async function apiCall(showDetails) {
   const data = await useFetch(`${base_url}/title/${id}`, {
     headers: { 'Content-type': 'application/json' },
     method: 'PUT',
-    body: addDetails.id ? JSON.stringify(showDetails) : '',
+    body: showDetails.id ? JSON.stringify(showDetails) : '',
   })
   return data
 }
