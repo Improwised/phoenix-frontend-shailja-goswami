@@ -3,6 +3,7 @@ definePageMeta({
   layout: 'default',
 })
 const { base_url: base_url } = useRuntimeConfig()
+console.log(base_url)
 const { data: title, pending } = await useFetch(`${base_url}/title`)
 const firstFiveShow = computed(() => {
   return title.value.slice(0, 4)
