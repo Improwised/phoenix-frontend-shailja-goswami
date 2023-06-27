@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     },
   },
 
-
   app: {
     baseURL: '/phoenix-frontend-shailja-goswami/',
     head: {
@@ -42,7 +41,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
- 
+
   vite: {
     define: {
       'process.env.DEBUG': false,
