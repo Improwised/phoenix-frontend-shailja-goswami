@@ -1,18 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default {
+export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       base_url: process.env.BASE_URL,
     },
   },
-  mode: 'static',
-  router: {
-    options: {
-      base: '/phoenix-frontend-shailja-goswami/',
-    },
-  },
+
 
   app: {
+    baseURL: '/phoenix-frontend-shailja-goswami/',
     head: {
       title: 'FlixTv',
       meta: [
@@ -46,10 +42,10 @@ export default {
       },
     ],
   ],
-
+ 
   vite: {
     define: {
       'process.env.DEBUG': false,
     },
   },
-}
+})
