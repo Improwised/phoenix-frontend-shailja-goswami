@@ -1,10 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+export default ({
   runtimeConfig: {
     public: {
       base_url: process.env.BASE_URL,
     },
   },
+  mode: 'static',
+  router:{
+     options: {
+      base: '/phoenix-frontend-shailja-goswami/',
+    }
+},
 
   app: {
     head: {
@@ -40,7 +46,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
-
+ 
   vite: {
     define: {
       'process.env.DEBUG': false,
