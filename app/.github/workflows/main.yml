@@ -42,5 +42,7 @@ jobs:
         with:
           target_branch: develop
           build_dir: app/.output/public
+          absolute_build_dir: true
+          verbose: true
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN_GITHUB }}
