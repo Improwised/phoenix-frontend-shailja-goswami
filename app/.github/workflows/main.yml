@@ -40,7 +40,9 @@ jobs:
         name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
-          target_branch: main
-          build_dir: dist
+          target_branch: develop
+          build_dir: .output/public
+          # absolute_build_dir: true
+          verbose: true
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN_GITHUB }}
